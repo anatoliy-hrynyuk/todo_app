@@ -29,7 +29,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "938722911325.dkr.ecr.eu-west-2.amazonaws.com/todo-app",
+      "image": "938722911325.dkr.ecr.eu-west-2.amazonaws.com/todo-app:latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
