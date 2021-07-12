@@ -14,7 +14,7 @@ async function bootstrap() {
   app.setGlobalPrefix("api/v1");
 
   const options = new DocumentBuilder()
-    .setTitle("Notes todo app")
+    .setTitle("Notes todo app 12.07.21")
     .setDescription(
       "A documentation for notes"
     )
