@@ -55,7 +55,7 @@ jobs:
                  env:
                       ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
                       ECR_REPOSITORY: todo-app
-                      IMAGE_TAG: latest
+                      IMAGE_TAG: develop
                       
                  run: |
                       # Build a docker container and
