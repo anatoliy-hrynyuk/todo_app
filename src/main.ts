@@ -7,14 +7,14 @@ import { NoteModule } from "../src/modules/note.module";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix("api/v1");
 
   const options = new DocumentBuilder()
-    .setTitle("Notes todo app 12.07.21")
+    .setTitle("Notes todo app develop")
     .setDescription(
       "A documentation for notes"
     )
