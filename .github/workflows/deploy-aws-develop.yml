@@ -74,13 +74,13 @@ jobs:
                  uses: aws-actions/amazon-ecs-render-task-definition@v1
                  with:
                       task-definition: task-definition-develop.json
-                      container-name: todo-app-task
+                      container-name: todo-app-task-develop
                       image: ${{ steps.build-image.outputs.image }}
 
                - name: Deploy Amazon ECS task definition
                  uses: aws-actions/amazon-ecs-deploy-task-definition@v1
                  with:
                       task-definition: ${{ steps.task-def.outputs.task-definition }}
-                      service: todo-app-services
+                      service: todo-app-services-develop
                       cluster: todo-app-cluster
                       wait-for-service-stability: true
