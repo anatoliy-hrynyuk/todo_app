@@ -9,9 +9,9 @@
       "entryPoint": null,
       "portMappings": [
         {
-          "hostPort": 3000,
+          "hostPort": 3001,
           "protocol": "tcp",
-          "containerPort": 3000
+          "containerPort": 3001
         }
       ],
       "command": null,
@@ -46,18 +46,18 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "todo-app-task"
+      "name": "todo-app-task-develop"
     }
   ],
   "placementConstraints": [],
-  "memory": "1024",
+  "memory": "2048",
   "taskRoleArn": null,
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:938722911325:task-definition/todo-app-task:1",
-  "family": "todo-app-task",
+  "taskDefinitionArn": "arn:aws:ecs:eu-west-2:938722911325:task-definition/todo-app-task-develop:1",
+  "family": "todo-app-task-develop",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -89,7 +89,7 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
-  "cpu": "256",
+  "cpu": "512",
   "revision": 1,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
