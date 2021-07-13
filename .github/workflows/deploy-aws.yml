@@ -65,7 +65,7 @@ jobs:
                       npm run build
                       npm test
                       npm run test:e2e
-                      docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+                      docker build --build-arg port=${3000} -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
                       docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
                       echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
