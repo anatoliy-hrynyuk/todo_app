@@ -7,7 +7,7 @@ import { NoteModule } from "../src/modules/note.module";
 
 dotenv.config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
